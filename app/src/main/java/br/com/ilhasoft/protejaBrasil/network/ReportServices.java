@@ -26,7 +26,7 @@ public class ReportServices {
     public ReportServices(Context context) {
         baseUrl = context.getString(R.string.api_report_url);
         violatedWomenBaseUrl = context.getString(R.string.api_violated_women_report_url);
-        violatedWomenSondhaThemeId = context.getString(R.string.violated_women_sondha_theme_id);
+        violatedWomenSondhaThemeId = context.getString(R.string.api_violated_women_theme_id);
 
         OkHttpClient.Builder clientBuilder = new OkHttpClient.Builder();
         setLoggingInterceptorForDebug(clientBuilder);

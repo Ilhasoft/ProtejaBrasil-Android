@@ -36,8 +36,8 @@ public abstract class BaseServices<T> extends RetrofitServices {
     private void initRetrofit(Class<T> serviceClass, boolean cacheEnabled, Context context, boolean forceCache) {
         setForceCache(forceCache);
 
-        String baseUrl = context.getString(R.string.api_base_url_v2);
-        apiToken = context.getString(R.string.api_token);
+        String baseUrl = context.getString(R.string.api_base_url);
+        apiToken = context.getString(R.string.api_base_token);
 
         OkHttpClient.Builder clientBuilder = new OkHttpClient.Builder();
         clientBuilder.readTimeout(60, TimeUnit.SECONDS);
