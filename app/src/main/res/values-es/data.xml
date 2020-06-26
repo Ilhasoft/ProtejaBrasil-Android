@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="racial_subtype1">Comunidades Quilombolas</string>
+    <string name="racial_subtype2">Comunidades de Matriz Africana</string>
+    <string name="racial_subtype3">Comunidades de Etnia Gitana</string>
+    <string name="racial_subtype4">Mujer Negra</string>
+    <string name="racial_subtype5">Juventud Negra</string>
+    <string name="racial_subtype6">Población Negra en Geral</string>
+
+    <string name="place1">Casa</string>
+    <string name="place2">Calle</string>
+    <string name="place3">Local de trabajo</string>
+    <string name="place4">Autobús</string>
+    <string name="place5">Otros</string>
+    <string name="place13">Escuela</string>
+    <string name="place14">Unidad Penitenciaria - Presidio</string>
+    <string name="place15">Albergue</string>
+    <string name="place16">Institución de larga estadía para viejos (ILPI)</string>
+    <string name="place17">Iglesia</string>
+    <string name="place18">Comisaría de policía</string>
+    <string name="place19">Comisaría de policía como Unidad Penitenciaria</string>
+    <string name="place20">Unidad Penitenciaria - Cárcel Público</string>
+    <string name="place21">Unidad de Medida Educativa y social</string>
+    <string name="place22">Medida de Seguridad - Manicomio Judicial</string>
+    <string name="place23">Manicomio/Psiquiatría Hospitalaria/Casa de Salud</string>
+    <string name="place24">Casa del Sospechoso</string>
+    <string name="place25">Casa de la  Víctima</string>
+    <string name="place26">Hospital</string>
+
+    <string name="frequency8">Única vez</string>
+    <string name="frequency1">Diariamente</string>
+    <string name="frequency3">Todas las mañanas</string>
+    <string name="frequency4">Todas las tardes</string>
+    <string name="frequency2">Semanalmente</string>
+    <string name="frequency9">Quincenal</string>
+    <string name="frequency7">Mensalmente</string>
+    <string name="frequency10">Ocasionalmente</string>
+    <string name="frequency5">No informado</string>
+
+    <string name="age_group18">Nasciturus</string>
+    <string name="age_group19">Recién-nacido</string>
+    <string name="age_group20">0 a 3 años</string>
+    <string name="age_group21">4 a 7 años</string>
+    <string name="age_group22">8 a 11 años</string>
+    <string name="age_group23">12 a 14 años</string>
+    <string name="age_group24">15 a 17 años</string>
+    <string name="age_group25">17 a 19 años</string>
+    <string name="age_group3">18 a 24 años</string>
+    <string name="age_group4">25 a 30 años</string>
+    <string name="age_group5">31 a 35 años</string>
+    <string name="age_group6">36 a 40 años</string>
+    <string name="age_group7">41 a 45 años</string>
+    <string name="age_group8">46 a 50 años</string>
+    <string name="age_group9">51 a 55 años</string>
+    <string name="age_group10">56 a 60 años</string>
+    <string name="age_group11">61 a 65 años</string>
+    <string name="age_group12">66 a 70 años</string>
+    <string name="age_group13">71 a 75 años</string>
+    <string name="age_group14">76 a 80 años</string>
+    <string name="age_group15">81 a 85 años</string>
+    <string name="age_group16">85 a 90 años</string>
+    <string name="age_group17">91 años o más</string>
+
+    <string name="ethnicity3">Amarillo</string>
+    <string name="ethnicity1">Blanco</string>
+    <string name="ethnicity5">Indígena</string>
+    <string name="ethnicity6">No informado</string>
+    <string name="ethnicity4">Pardo</string>
+    <string name="ethnicity2">Preta</string>
+
+    <string name="sex1">Masculino</string>
+    <string name="sex2">Femenino</string>
+    <string name="sex3">No informado</string>
+
+    <string name="sex_option6">Lesbia</string>
+    <string name="sex_option7">Gay</string>
+    <string name="sex_option8">Bisexual</string>
+    <string name="sex_option4">Travestí</string>
+    <string name="sex_option5">Transexual</string>
+    <string name="sex_option9">Heterosexual</string>
+    <string name="sex_option3">No informado</string>
+
+    <string name="internet_option_1">Violencia o discriminación contra la mujer</string>
+    <string name="internet_option_2">Homofobia</string>
+    <string name="internet_option_3">Xenofobia</string>
+    <string name="internet_option_4">Intolerancia religiosa</string>
+    <string name="internet_option_5">Pornografía infantil</string>
+    <string name="internet_option_6">Racismo</string>
+    <string name="internet_option_7">Apología y incitación a los delitos contra la vida</string>
+    <string name="internet_option_8">Neonazismo</string>
+    <string name="internet_option_9">Tráfico de personass</string>
+
+    <string name="institution_type1">Órgano de la Administración Federal</string>
+    <string name="institution_type2">Órgano de la Administración del Estado</string>
+    <string name="institution_type3">Órgano de la Administración Municipal</string>
+
+    <string name="transport_type1">El transporte público Carretera</string>
+    <string name="transport_type2">El transporte público Metro</string>
+    <string name="transport_type3">El transporte público de Agua</string>
+    <string name="transport_type4">El transporte público de Aire</string>
+
+    <string name="access_violation_type1">La falta de accesibilidad al medio físico (edificios o vehículos)</string>
+    <string name="access_violation_type2">La falta de acceso a la información y las comunicaciones/medios</string>
+    <string name="access_violation_type3">Otra falta de accesibilidad</string>
+
+    <string name="access_violation140">No acera accesible (altura, huecos, postes, árboles, etc.)</string>
+    <string name="access_violation141">No hay plazas de aparcamiento específicas</string>
+    <string name="access_violation142">La falta de rampas de acceso, rampas empinadas o sin pasamanos adecuados</string>
+    <string name="access_violation143">Puertas sin barreras de acceso (torniquetes, los carriles no incorporados, ancho adecuado, etc.)</string>
+    <string name="access_violation144">La ausencia o ineficacia de ascensor accesible o plataforma elevadora</string>
+    <string name="access_violation146">La ausencia de un piso táctil</string>
+    <string name="access_violation147">La falta de señales de información en braille y otros signos con símbolos internacionales</string>
+    <string name="access_violation148">La ausencia de sanitario accesible</string>
+    <string name="access_violation149">La ausencia de asientos preferenciales o espacio para silla de ruedas</string>
+    <string name="access_violation150">La falta de apoyo para el embarque y desembarque</string>
+    <string name="access_violation151">Unidad de vivienda programa público entregado sin accesibilidad</string>
+    <string name="access_violation152">La ausencia o insuficiencia de taxis accesibles</string>
+    <string name="access_violation153">La falta de medios de comunicación y la información accesible (por ejemplo, la falta de traductor / intérprete para sordos en los acontecimientos y la falta de publicaciones o impresos en braille o otro formato accesible)</string>
+    <string name="access_violation154">Acceso denegado para el usuario de perro guía</string>
+    <string name="access_violation155">Sitio web o portal de Internet no es accesible</string>
+    <string name="access_violation145">La ausencia de un centro de servicio o información accesible al personal de servicio</string>
+    <string name="access_violation156">OTRAS</string>
+
+
+
+</resources>

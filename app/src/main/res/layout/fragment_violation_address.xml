@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.AddressViewModel"/>
+        <import type="br.com.ilhasoft.protejaBrasil.model.State"/>
+        <import type="br.com.ilhasoft.protejaBrasil.model.City"/>
+
+        <import type="java.util.List"/>
+        <import type="br.com.ilhasoft.support.databinding.bindings.BindableField"/>
+
+        <variable name="address" type="AddressViewModel"/>
+
+        <variable name="states" type="List&lt;State>"/>
+        <variable name="cities" type="List&lt;City>"/>
+
+        <variable name="checkedRadio" type="int"/>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            style="@style/padding_report_item">
+
+            <TextView
+                android:id="@+id/question_victim_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/title_question_victim_location"
+                style="@style/question_format" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_my_location"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
+                    app:checked="@{checkedRadio}"
+                    style="@style/radio_button_default" />
+
+                <RadioButton
+                    android:id="@+id/fillForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_fill_address"
+                    app:checked="@{checkedRadio}"
+                    style="@style/radio_button_default" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/statesSpinner"
+                android:layout_width="match_parent"
+                style="@style/spinner_format"
+                app:defaultText="@{@string/spinner_default_state_text}"
+                app:items="@{states}"
+                app:binding="@{address.state}"
+                app:visible="@{checkedRadio == @id/fillForm}"/>
+
+            <Spinner
+                android:id="@+id/citiesSpinner"
+                android:layout_width="match_parent"
+                style="@style/spinner_format"
+                app:defaultText="@{@string/spinner_default_city_text}"
+                app:items="@{cities}"
+                app:binding="@{address.city}"
+                app:visible="@{checkedRadio == @id/fillForm}"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_address"
+                app:binding="@{address.address}"
+                app:visible="@{checkedRadio == @id/fillForm}"
+                style="@style/form_text_input" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

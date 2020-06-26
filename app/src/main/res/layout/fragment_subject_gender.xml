@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.ResponseObject"/>
+        <import type="java.util.List"/>
+        <import type="br.com.ilhasoft.support.databinding.bindings.BindableField"/>
+
+        <variable name="genders" type="List&lt;ResponseObject>"/>
+        <variable name="sexOptions" type="List&lt;ResponseObject>"/>
+
+        <variable name="subjectGender" type="BindableField"/>
+        <variable name="subjectSexOption" type="BindableField"/>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/padding_report_item">
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:background="@drawable/ic_help" />
+
+        <TextView
+            android:id="@+id/questionGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/title_question_gender_victim"
+            style="@style/question_format" />
+
+        <Spinner
+            android:id="@+id/gendersSpinner"
+            android:layout_width="match_parent"
+            style="@style/spinner_format"
+            app:defaultText="@{@string/spinner_default_text}"
+            app:items="@{genders}"
+            app:binding="@{subjectGender}"/>
+
+        <TextView
+            android:id="@+id/questionSexOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_distance_question"
+            tools:text="@string/title_question_sex_option_victim"
+            style="@style/question_format" />
+
+        <Spinner
+            android:id="@+id/sexOptionsSpinner"
+            android:layout_width="match_parent"
+            style="@style/spinner_format"
+            app:defaultText="@{@string/spinner_default_text}"
+            app:items="@{sexOptions}"
+            app:binding="@{subjectSexOption}"/>
+
+    </LinearLayout>
+
+</layout>

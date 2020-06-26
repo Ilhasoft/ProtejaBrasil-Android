@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.ResponseObject"/>
+        <import type="java.util.List"/>
+        <import type="br.com.ilhasoft.support.databinding.bindings.BindableField"/>
+
+        <variable name="ageGroups" type="List&lt;ResponseObject>"/>
+        <variable name="ethnicities" type="List&lt;ResponseObject>"/>
+
+        <variable name="subjectAgeGroup" type="BindableField"/>
+        <variable name="subjectEthnicity" type="BindableField"/>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/padding_report_item">
+
+        <TextView
+            android:id="@+id/questionAgeGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/title_question_age_group_victim"
+            style="@style/question_format" />
+
+        <Spinner
+            android:id="@+id/ageGroupsSpinner"
+            android:layout_width="match_parent"
+            style="@style/spinner_format"
+            app:defaultText="@{@string/spinner_default_text}"
+            app:binding="@{subjectAgeGroup}"
+            app:items="@{ageGroups}" />
+
+        <TextView
+            android:id="@+id/questionEthnicity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_distance_question"
+            tools:text="@string/title_question_ethnicity_victim"
+            style="@style/question_format" />
+
+        <Spinner
+            android:id="@+id/ethnicitiesSpinner"
+            android:layout_width="match_parent"
+            style="@style/spinner_format"
+            app:defaultText="@{@string/spinner_default_text}"
+            app:binding="@{subjectEthnicity}"
+            app:items="@{ethnicities}" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,49 @@
+<wsdl:operation name="cadastraDenuncia">
+    <http:operation location="/cadastraDenuncia"/>
+    
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pm="http://protejabrasil.ilhasoft.mobi">
+    <soapenv:Header></soapenv:Header>
+    <soapenv:Body>
+        <pm:cadastraDenuncia>
+
+            <data>
+                <canalatendimento>13</canalatendimento>
+
+                <violacao>%1$s</violacao>
+                <des_violacao>%2$s</des_violacao>
+                <subtipoviolacao>%3$s</subtipoviolacao>
+                <des_subtipoviolacao>%4$s</des_subtipoviolacao>
+
+                <frequencia>%5$s</frequencia>
+
+                <nome_vitima>%6$s</nome_vitima>
+                <localizacao_vitima>%7$s</localizacao_vitima>
+                <uf_vitima>%8$s</uf_vitima>
+                <cidade_vitima>%9$s</cidade_vitima>
+                <endereco_vitima>%10$s</endereco_vitima>
+
+                <tiposuspeito>%11$s</tiposuspeito>
+                <nome_suspeito>%12$s</nome_suspeito>
+                <uf_suspeito>%13$s</uf_suspeito>
+                <cidade_suspeito>%14$s</cidade_suspeito>
+                <endereco_suspeito>%15$s</endereco_suspeito>
+
+                <descricao>%16$s</descricao>
+                <local>%17$s</local>
+
+                <instituicao_acionada>%18$s</instituicao_acionada>
+                <sexo_biologico_vitima>%19$s</sexo_biologico_vitima>
+                <opcao_sexual_vitima>%20$s</opcao_sexual_vitima>
+                <faixa_etaria_vitima>%21$s</faixa_etaria_vitima>
+                <etnia_vitima>%22$s</etnia_vitima>
+                <sexo_biologico_suspeito>%23$s</sexo_biologico_suspeito>
+                <opcao_sexual_suspeito>%24$s</opcao_sexual_suspeito>
+                <faixa_etaria_suspeito>%25$s</faixa_etaria_suspeito>
+                <etnia_suspeito>%26$s</etnia_suspeito>
+            </data>
+
+        </pm:cadastraDenuncia>
+    </soapenv:Body>
+    </soapenv:Envelope>
+
+</wsdl:operation>

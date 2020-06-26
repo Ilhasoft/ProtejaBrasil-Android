@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Protect Brazil</string>
+
+    <!-- Navigation drawer menu -->
+    <string name="action_map">Map</string>
+    <string name="action_denounce">Denounce</string>
+    <string name="action_reports">My denounces</string>
+    <string name="action_violation_types">Violation types</string>
+    <string name="action_opinion">Give your opinion</string>
+    <string name="action_about">About</string>
+    <string name="label_close_menu">Close Menu</string>
+    <string name="label_open_menu">Open Menu</string>
+
+    <array name="entries">
+        <item>Police Stations</item>
+        <item>Hospitals</item>
+        <item>Councils</item>
+        <item>Hospitals</item>
+    </array>
+
+    <!-- Hints -->
+    <string name="hint_search_networks">Search for protection nets</string>
+    <string name="hint_search_places">Search for location</string>
+    <string name="hint_accessibility_barrier">Describe</string>
+
+    <!-- Floating button texts -->
+    <string name="label_women_report_call">Denounce through Disk 180</string>
+    <string name="label_report_call">Denounce through Disk 100</string>
+    <string name="label_accessibility">Location without accessibility</string>
+    <string name="label_internet_crim">Violation on the internet</string>
+    <string name="label_report">Violation outside of the internet</string>
+
+    <!-- Activity titles -->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_accessibility_report">Location without accessibility</string>
+
+    <!-- Report questions -->
+    <string name="title_question_victim_info">Name of the victim:*</string>
+    <string name="title_question_victim_location_description">Where can the victim be found?*</string>
+    <string name="title_question_offender_info">Who is the offender?*</string>
+    <string name="title_question_place_violation">Where did the violation happen?*</string>
+    <string name="title_question_violation_time">For how long does this happen?*</string>
+    <string name="title_question_barriers">Which barriers do you find on this location*</string>
+    <string name="title_question_violation_type">Which type of violation occurred?*</string>
+    <string name="title_question_violation_description">How is the violence executed?*</string>
+    <string name="title_question_institution_activated">Was any council contacted?</string>
+    <string name="title_question_victim_location">What is the victim\'s address?*</string>
+    <string name="title_question_offender_location">What is the offender\'s address?*</string>
+    <string name="title_question_age_group_victim">How old is the victim?</string>
+    <string name="title_question_ethnicity_victim">What is the race/ethnicity of the victim?</string>
+    <string name="title_question_age_group_offender">How old is the offender?</string>
+    <string name="title_question_ethnicity_offender">What is the race/ethnicity of the offender?</string>
+    <string name="title_question_gender_victim">What is the biological sex of the victim?*</string>
+    <string name="title_question_sex_option_victim">What is the sexual identity of the victim?</string>
+    <string name="title_question_gender_offender">What is the biological sex of the offender?*</string>
+    <string name="title_question_sex_option_offender">What is the sexual identity of the offender?</string>
+    <string name="title_question_theme">Your denounce is related to which profile?*</string>
+    <string name="title_question_racial_subtype">What\'s the racial equality denounce about?*</string>
+    <string name="title_question_women_subtype">What\'s the violence against women denounce about?*</string>
+    <string name="title_question_internet_crime">What happened?*</string>
+    <string name="title_question_internet_location">Where it occurred (URL)?*</string>
+
+    <!-- Result screens -->
+    <string name="protocol_info">This is your protocol. To follow it, call Disk %d after 15 days</string>
+
+    <!-- Email strings -->
+    <string name="email_subject_text">Accessibility denounce</string>
+    <string name="email_from_text">nobody@mail.com.br</string>
+    <string name="accessibility_report_email_address">dielson@ilhasoft.com.br</string>
+
+    <string name="label_violation_details">Violation type</string>
+    <string name="label_call">Call</string>
+    <string name="label_route">Route</string>
+    <string name="title_violation_network">Protection net</string>
+    <string name="hint_victim_name">Victim\'s name</string>
+    <string name="hint_victim_location_description">Eg.: He/She is at a friend\'s house</string>
+    <string name="label_violation_report">Violation denounce</string>
+    <string name="text_next">Next</string>
+    <string name="hint_offender_name">Offender\'s name</string>
+    <string name="info_offender_name">In case you don\'t know, report unknown</string>
+    <string name="title_person">Person</string>
+    <string name="title_company">Organization/Institution</string>
+    <string name="title_unknown">I don\'t know</string>
+    <string name="hint_violation_description">Describe what occurred</string>
+    <string name="hint_institution_activated">Inform a council</string>
+    <string name="response_negative">No</string>
+    <string name="response_positive">Yes</string>
+    <string name="hint_unknown_location">Don\'t know</string>
+    <string name="hint_my_location">My location</string>
+    <string name="hint_address_city">Town</string>
+    <string name="hint_address">Address</string>
+    <string name="info_victim_name">If it\'s you, inform your name</string>
+    <string name="spinner_default_text">Select an option</string>
+    <string name="spinner_default_state_text">Select a state</string>
+    <string name="spinner_default_city_text">Select a town</string>
+    <string name="error_required_fields">Is there any required question without response (marked with asterisx)?</string>
+    <string name="message_cancel_report">Are you sure you want to quit the denounce?</string>
+    <string name="option_cancel">Continue</string>
+    <string name="option_give_up">Quit</string>
+    <string name="message_report_protocol">Denounce forwarded to</string>
+    <string name="label_back_start">Back to the start</string>
+    <string name="load_message_report">Sending denounce...</string>
+    <string name="message_report_error">An error occurred when saving it. Try again later.</string>
+    <string name="hint_fill_address">Inform address</string>
+    <string name="hint_internet_crime_description">Description</string>
+    <string name="hint_website_address">Website\'s address</string>
+    <string name="text_report">Denounce</string>
+    <string name="label_internet_crime">Crimes on the internet</string>
+    <string name="text_about_app">The Protect Brazil is an initiative of UNICEF and the Human Rights Secretariat of the Ministry of Justice and Citizenship. The application was launched in 2013 as a result of the convergence agenda, a coordinating body that brings together various organizations focused on promoting the rights of children and adolescents during mega events. \n\n The creation of the application was an initiative of UNICEF, Ilhasoft, Cedeca-BA and ABMP with the accession of the federal government afterwards. In 2016, a new version was released, expanding the functionality and making integration with Disque 100, the main complaint channel of human rights violations in the country.</string>
+    <string name="label_about">About</string>
+    <string name="label_opinion">Give your opinion</string>
+    <string name="title_opinion">Doubts or suggestions? Send to us.</string>
+    <string name="hint_subject">Subject</string>
+    <string name="hint_opinion_name">Name</string>
+    <string name="hint_opinion_email">E-mail</string>
+    <string name="hint_opinion_message">Message</string>
+    <string name="text_send">Send</string>
+    <string name="title_send_opinion_email">Send email...</string>
+    <string name="message_error_send_opinion">There are no email clients installed at your device. It wasn\'t possible to send your suggestion!</string>
+    <string name="load_message_network">Searching protection nets...</string>
+    <string name="title_networks_found">Nets founded:</string>
+    <string name="error_message_networks_not_found">Any protection net with this name was found</string>
+    <string name="label_open_today">Opened today</string>
+    <string name="label_closed_today">Closed today</string>
+    <string name="receiver_email_opinion">contato@protejabrasil.com.br</string>
+    <string name="error_location_disabled">Enable your localization to develop this action!</string>
+    <string name="error_message_location_disabled">It wasn\'t possible to find a protection net next to you. Verify your GPS permission.</string>
+    <string name="error_message_network_not_found">It wasn\'t possible to find a protection net to help on this kind of violation</string>
+    <string name="hint_search_violation_type">Search for violation nets</string>
+    <string name="prompt_call_permission_error">It won\'t be possible to make this call without permission!</string>
+    <string name="label_contact">Contact</string>
+    <string name="label_internet_help">Help and orientation</string>
+    <string name="label_criticism">Critics</string>
+    <string name="label_compliment">Compliment</string>
+    <string name="error_message_feedback">An error occurred when sendind your feedback, verify your connection with the internet!</string>
+    <string name="prompt_success_message_feedback">We will evaluate your message and soon, you will receive a response.</string>
+    <string name="error_message_type_invalid">Choose what\'s your opinion about on the options above!</string>
+    <string name="label_inform">Inform</string>
+    <string name="label_doubt">Doubt</string>
+    <string name="label_suggestion">Suggestion</string>
+    <string name="label_unknown">Don\'t know</string>
+    <string name="title_gender_help">Doubt? We explain!</string>
+    <string name="message_gender_help">Biological sex: \n\nIt\'s the genitalia and chromosomes when you came into the world. \n\nSexual Identity:\n\n Sexual identity of a person that indicates which genders he/she feels physically, romantically and/or emotionally atracted to.</string>
+    <string name="label_help_button">OK, understood!</string>
+    <string name="error_message_my_location">It wasn\'t possible to find your address, choose inform manually</string>
+    <string name="disk_100">Disk 100</string>
+    <string name="disk_180">Ligue 180</string>
+    <string name="prompt_evaluate_google_play">Evaluate on Google Play</string>
+    <string name="error_message_violation_empty">Any violation was found to this theme</string>
+    <string name="label_required_field">*required field</string>
+    <string name="hint_access_inst_address">Enter the full address</string>
+    <string name="hint_access_inst_location_name">Name of organ/Institution</string>
+    <string name="hint_access_inst_offender_type">Select the offender type</string>
+    <string name="hint_access_trans_address">Route/line number or flight</string>
+    <string name="hint_access_trans_location_name">Name of transport operator</string>
+    <string name="hint_access_violation">Select the violation</string>
+    <string name="hint_access_violation_desc">Description of the incident</string>
+    <string name="hint_access_violation_type">Select the violation type</string>
+    <string name="title_access_inst_location">Organ/Public place</string>
+    <string name="title_access_trans_location">Public transport</string>
+    <string name="title_question_accessibility_location">What\'s the location of report?*</string>
+    <string name="title_question_accessibility_violation_desc">Describe the incident:*</string>
+    <string name="title_question_victim_gender_no_req">What is the biological sex of the victim?</string>
+    <string name="title_question_institution_activated_required">Was any council contacted?</string>
+    <string name="title_question_accessibility_violation">What\'s type of violation was found?*</string>
+    <string name="title_question_accessibility_victim_name">What\'s the victim name?</string>
+    <string name="title_question_accessibility_location_info">Location information:*</string>
+    <string name="hint_violation_inform">Inform the violation</string>
+    <string name="text_about_safernet">SaferNet Brazil offers help service against crimes and human rights violations on the Internet with effective and transparent procedures for forwarding solutions. You are served by a psychologist, with respect, anonymity, and strict secrecy about everything that is said.</string>
+    <string name="error_loading_data">An error occurred while loading data, please check your connection and try again.</string>
+    <string name="error_message_valid_email">Enter a valid email address</string>
+    <string name="info_internet_crime_destination">Safernet</string>
+    <string name="protect_and_report">Protect and Report</string>
+    <string name="protocol_info_internet">This is your protocol, to monitor access http://new.safernet.org.br/denuncie</string>
+    <string name="message_error_address">An error occurred while saving the report. Please check if the site address is correct. (Eg.: http://www.google.com)</string>
+    <string name="label_report_using_app">Report by the application</string>
+    <string name="loading_protection_networks">Loading protection networks</string>
+    <string name="refreshing_data">Updating protect networks</string>
+    <string name="domestic_and_familiar_violence">Domestic and familiar violence</string>
+    <string name="intimidation">Intimidation</string>
+    <string name="feminicide">Feminicide</string>
+    <string name="women_trade">Women trade</string>
+    <string name="false_imprisonment">False imprisonment</string>
+    <string name="violence_against_religious_diversity">Violence against religious diversity</string>
+    <string name="violence_on_sports">Violence on sports</string>
+    <string name="homicide">Homicide</string>
+    <string name="institutional_violence">Institutional violence</string>
+    <string name="physical_violence">Physical violence</string>
+    <string name="moral_violence">Moral violence</string>
+    <string name="police_violence">Police violence</string>
+    <string name="obstetrical_violence">Obstetrical violence</string>
+    <string name="sexual_violence">Sexual violence</string>
+    <string name="virtual_violence">Virtual violence</string>
+    <string name="slave_work">Slave work</string>
+    <string name="other_entries">Other violation</string>
+
+    <!-- onboard -->
+    <string name="onboard_message">Violence against\n female gender</string>
+    <string name="onboard_submessage">Now Protect Brazil\n is integrated to Ligue 180</string>
+    <string name="proceed">Continue</string>
+</resources>

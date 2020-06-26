@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="racial_subtype1">Quilombolas communities</string>
+    <string name="racial_subtype2">African origin communities</string>
+    <string name="racial_subtype3">Gypsy communities</string>
+    <string name="racial_subtype4">Black woman</string>
+    <string name="racial_subtype5">Black youth</string>
+    <string name="racial_subtype6">Black population in general</string>
+
+    <string name="place1">House</string>
+    <string name="place2">Street</string>
+    <string name="place3">Work place</string>
+    <string name="place4">Bus</string>
+    <string name="place5">Others</string>
+    <string name="place13">School</string>
+    <string name="place14">Prision unit</string>
+    <string name="place15">Hostel</string>
+    <string name="place16">Elderly institution for long stay (ILPI)</string>
+    <string name="place17">Church</string>
+    <string name="place18">Police station</string>
+    <string name="place19">Police station as prision unit</string>
+    <string name="place20">Prision unit - Public jail</string>
+    <string name="place21">Social educative measure unit</string>
+    <string name="place22">Safety measure - Judicial asylum</string>
+    <string name="place23">Asylum/Psychiatric hospital/Health house</string>
+    <string name="place24">Suspect\'s house</string>
+    <string name="place25">Victim\'s house</string>
+    <string name="place26">Hospital</string>
+
+    <string name="frequency8">Only one time</string>
+    <string name="frequency1">Daily</string>
+    <string name="frequency3">Every morning</string>
+    <string name="frequency4">Every noon</string>
+    <string name="frequency2">Weekly</string>
+    <string name="frequency9">Every 15 days</string>
+    <string name="frequency7">Monthly</string>
+    <string name="frequency10">Ocasionaly</string>
+    <string name="frequency5">Not informed</string>
+
+    <string name="age_group18">Nasciturus</string>
+    <string name="age_group19">Just born</string>
+    <string name="age_group20">0-3 years old</string>
+    <string name="age_group21">4-7 years old</string>
+    <string name="age_group22">8-11 years old</string>
+    <string name="age_group23">12-14 years old</string>
+    <string name="age_group24">15-17 years old</string>
+    <string name="age_group25">17-19 years old</string>
+    <string name="age_group3">18-24 years old</string>
+    <string name="age_group4">25-30 years old</string>
+    <string name="age_group5">31-35 years old</string>
+    <string name="age_group6">36-40 years old</string>
+    <string name="age_group7">41-45 years old</string>
+    <string name="age_group8">46-50 years old</string>
+    <string name="age_group9">51-55 years old</string>
+    <string name="age_group10">56-60 years old</string>
+    <string name="age_group11">61-65 years old</string>
+    <string name="age_group12">66-70 years old</string>
+    <string name="age_group13">71-75 years old</string>
+    <string name="age_group14">76-80 years old</string>
+    <string name="age_group15">81-85 years old</string>
+    <string name="age_group16">85-90 years old</string>
+    <string name="age_group17">91 years old or more</string>
+
+    <string name="ethnicity3">Asian</string>
+    <string name="ethnicity1">White</string>
+    <string name="ethnicity5">Indian</string>
+    <string name="ethnicity6">Not informed</string>
+    <string name="ethnicity4">Parda</string>
+    <string name="ethnicity2">Black</string>
+
+    <string name="sex1">Male</string>
+    <string name="sex2">Female</string>
+    <string name="sex3">Not informed</string>
+
+    <string name="sex_option6">Lesbian</string>
+    <string name="sex_option7">Gay</string>
+    <string name="sex_option8">Bissexual</string>
+    <string name="sex_option4">Travesti</string>
+    <string name="sex_option5">Transexual</string>
+    <string name="sex_option9">Heterosexual</string>
+    <string name="sex_option3">Not informed</string>
+
+    <string name="internet_option_1">Violence or prejudice against women</string>
+    <string name="internet_option_2">Homophobia</string>
+    <string name="internet_option_3">Xenophobia</string>
+    <string name="internet_option_4">Religious intolerance</string>
+    <string name="internet_option_5">Child pornography</string>
+    <string name="internet_option_6">Racism</string>
+    <string name="internet_option_7">Apology and incitement to crimes against life</string>
+    <string name="internet_option_8">Neo-Nazism</string>
+    <string name="internet_option_9">Human trafficking</string>
+
+    <string name="institution_type1">Organ of the Federal Administration</string>
+    <string name="institution_type2">Organ of the State Administration</string>
+    <string name="institution_type3">Organ of the Municipal Administration</string>
+
+    <string name="transport_type1">Road Public Transport</string>
+    <string name="transport_type2">Subway Public Transport</string>
+    <string name="transport_type3">Waterway Public Transport</string>
+    <string name="transport_type4">Air public transport</string>
+
+    <string name="access_violation_type1">Lack of accessibility to the physical environment (Buildings or vehicles)</string>
+    <string name="access_violation_type2">Lack of accessibility/media information and communications</string>
+    <string name="access_violation_type3">Another lack of accessibility</string>
+
+    <string name="access_violation140">Not accessible sidewalk (wrong height, holes, poles, trees, etc.)</string>
+    <string name="access_violation141">No special parking spaces</string>
+    <string name="access_violation142">Lack of access ramps, steep ramps or without suitable handrail</string>
+    <string name="access_violation143">Barrier-free access gates (turnstiles, not embedded rails, proper width, etc.)</string>
+    <string name="access_violation144">Absence or ineffectiveness of accessible elevator or lift platform</string>
+    <string name="access_violation146">Absence of tactile floor</string>
+    <string name="access_violation147">Lack of information signs in braille and other signs with international symbols</string>
+    <string name="access_violation148">Absence of accessible toilet</string>
+    <string name="access_violation149">Absence of special seating or space for wheelchair</string>
+    <string name="access_violation150">Lack of support for the embarkation and disembarkation</string>
+    <string name="access_violation151">Public program of housing unit delivered without accessibility</string>
+    <string name="access_violation152">Absence or inadequacy of accessible taxis</string>
+    <string name="access_violation153">Lack of media and accessible information (such as the lack of translator / interpreter for the deaf in events and the lack of publications or printed in Braille or other accessible format)</string>
+    <string name="access_violation154">Access denied for personal guide dog</string>
+    <string name="access_violation155">Site or the internet portal not accessible</string>
+    <string name="access_violation145">Absence of service desk or accessible information for service</string>
+    <string name="access_violation156">OTHERS</string>
+
+</resources>

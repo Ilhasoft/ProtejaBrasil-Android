@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="themeViewModel"
+            type="br.com.ilhasoft.protejaBrasil.model.view.ThemeViewModel"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/violationsList"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            app:items="@{themeViewModel.themes}"
+            app:handler="@{themeViewModel.handler}"
+            app:itemViewBinder="@{themeViewModel.itemViewBinder}" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_gravity="center"
+            app:visible="@{themeViewModel.themes.isEmpty}"/>
+
+    </FrameLayout>
+
+</layout>

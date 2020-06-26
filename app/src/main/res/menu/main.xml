@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/action_map"
+            android:icon="@drawable/ic_map"
+            android:checked="true"
+            android:title="@string/action_map" />
+
+        <item
+            android:id="@+id/action_denounce"
+            android:icon="@drawable/ic_my_reports"
+            android:title="@string/action_denounce"/>
+
+        <item
+            android:id="@+id/action_reports"
+            android:icon="@drawable/ic_my_reports"
+            android:visible="false"
+            android:title="@string/action_reports" />
+
+        <item
+            android:id="@+id/action_violation_types"
+            android:icon="@drawable/ic_violation_type"
+            android:checkable="false"
+            android:title="@string/action_violation_types" />
+
+        <item
+            android:id="@+id/action_opinion"
+            android:icon="@drawable/ic_opinion"
+            android:checkable="false"
+            android:title="@string/action_opinion" />
+
+        <item
+            android:id="@+id/action_about"
+            android:icon="@drawable/ic_about"
+            android:checkable="false"
+            android:title="@string/action_about" />
+
+    </group>
+
+</menu>

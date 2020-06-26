@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.FeedbackViewModel"/>
+        <import type="br.com.ilhasoft.protejaBrasil.helpers.BindableFeedbackType"/>
+
+        <variable name="viewModel" type="FeedbackViewModel"/>
+
+        <variable name="doubt" type="BindableFeedbackType"/>
+        <variable name="suggestion" type="BindableFeedbackType"/>
+        <variable name="criticism" type="BindableFeedbackType"/>
+        <variable name="compliment" type="BindableFeedbackType"/>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="?attr/colorPrimary"/>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/send">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/padding_report_item">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_opinion"
+                    style="@style/question_format" />
+
+                <br.com.ilhasoft.support.view.MultiRowsRadioGroup
+                    android:id="@+id/firstRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    app:binding="@{viewModel.type}">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/doubt"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            app:value="@{doubt}"
+                            android:text="@string/label_doubt"
+                            style="@style/radio_button_default" />
+
+                        <RadioButton
+                            android:id="@+id/suggestion"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            app:value="@{suggestion}"
+                            android:text="@string/label_suggestion"
+                            style="@style/radio_button_default" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <RadioButton
+                            android:id="@+id/criticism"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            app:value="@{criticism}"
+                            android:text="@string/label_criticism"
+                            style="@style/radio_button_default" />
+
+                        <RadioButton
+                            android:id="@+id/compliment"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            app:value="@{compliment}"
+                            android:text="@string/label_compliment"
+                            style="@style/radio_button_default" />
+
+                    </LinearLayout>
+
+                </br.com.ilhasoft.support.view.MultiRowsRadioGroup>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:hint="@string/hint_opinion_name"
+                    android:layout_marginTop="20dp"
+                    app:binding="@{viewModel.name}"
+                    style="@style/form_text_input" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:hint="@string/hint_opinion_email"
+                    app:binding="@{viewModel.email}"
+                    style="@style/form_text_input"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:hint="@string/hint_opinion_message"
+                    android:scrollbars="vertical"
+                    android:gravity="start|center_vertical"
+                    android:singleLine="true"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionSend|flagNoEnterAction"
+                    android:maxLines="5"
+                    android:layout_marginTop="15dp"
+                    app:binding="@{viewModel.message}"
+                    style="@style/text_input_format" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/text_send"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            style="@style/button_style_default" />
+
+    </RelativeLayout>
+
+</layout>

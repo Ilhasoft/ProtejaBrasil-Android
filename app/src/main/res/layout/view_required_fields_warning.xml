@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"
+        android:text="@string/label_required_field"
+        style="@style/text_red_style"/>
+</layout>

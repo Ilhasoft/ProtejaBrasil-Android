@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    loadProperties('signature')
+    signingConfigs {
+        release {
+            keyAlias signatureProperties.keyAlias
+            keyPassword signatureProperties.keyPassword
+            storeFile file(signatureProperties.keyPath)
+            storePassword signatureProperties.storePassword
+        }
+    }
+    defaultConfig {
+        applicationId "br.com.ilhasoft.protejaBrasil"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 24
+        versionName "3.7.3"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':recyclerview-databinding')
+    implementation project(':support-databinding')
+    implementation project(':support-android')
+    implementation project(':support-view-library')
+    implementation project(':JustifiedTextView')
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:9.4.0'
+    implementation 'com.google.android.gms:play-services-analytics:9.4.0'
+    implementation 'com.google.android.gms:play-services-location:9.4.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'com.github.clans:fab:1.6.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation('com.squareup.okhttp3:okhttp:3.12.4') {
+        exclude module: 'httpclient'
+        exclude module: 'httpmime'
+    }
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.github.Ilhasoft:data-binding-validator:2.0.0'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+def loadProperties(propertyName) {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file("${propertyName}.properties").newDataInputStream())
+    ext."${propertyName}Properties" = properties
+}
+
+apply plugin: 'com.google.gms.google-services'

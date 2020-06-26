@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.fragments.report.OffenderInfoFragment"/>
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.ViolationReportViewModel"/>
+        <import type="br.com.ilhasoft.support.databinding.bindings.BindableField" />
+        <import type="br.com.ilhasoft.protejaBrasil.model.ResponseObject" />
+
+
+        <variable name="fragment" type="OffenderInfoFragment"/>
+        <variable name="viewModel" type="ViolationReportViewModel"/>
+        <variable name="person" type="BindableField"/>
+        <variable name="company" type="BindableField"/>
+        <variable name="unknown" type="BindableField"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/padding_report_item">
+
+        <TextView
+            android:id="@+id/question_offender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_question_offender_info"
+            style="@style/question_format" />
+
+        <RadioGroup
+            android:id="@+id/typeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            app:binding="@{viewModel.offenderType}">
+
+            <RadioButton
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                app:value="@{person}"
+                android:text="@string/title_person"
+                style="@style/radio_button_default" />
+
+            <RadioButton
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:value="@{company}"
+                android:text="@string/title_company"
+                style="@style/radio_button_default" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/offenderName"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_offender_name"
+            app:binding="@{viewModel.offenderName}"
+            app:visible="@{((ResponseObject)viewModel.offenderType.get()).getId() != 3}"
+            style="@style/text_input_format"/>
+
+        <TextView
+            android:id="@+id/subtitleHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_offender_name"
+            style="@style/info_about_field" />
+
+    </LinearLayout>
+
+</layout>

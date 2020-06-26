@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="theme"
+            type="br.com.ilhasoft.protejaBrasil.model.Theme" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_extra_margin"
+        android:layout_marginBottom="@dimen/card_extra_margin"
+        android:layout_marginLeft="@dimen/card_side_margin"
+        android:layout_marginRight="@dimen/card_side_margin"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/iconBackground"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shape_oval_background"
+            app:viewColor="@{theme.color}" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/iconBackground"
+            android:layout_alignLeft="@+id/iconBackground"
+            android:transitionName="@string/transition_theme_icon"
+            app:imageUrl="@{theme.icon}"
+            tools:src="#F00"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iconBackground"
+            android:layout_toEndOf="@+id/iconBackground"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:text="@{theme.title}"
+            tools:text="Crianças e adolescentes"/>
+
+        <TextView
+            android:id="@+id/violation_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/iconBackground"
+            android:layout_toEndOf="@+id/iconBackground"
+            android:layout_below="@+id/title"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="@{theme.description}"
+            android:transitionName="@string/transition_theme_description"
+            tools:text="Casos de violação de direitos de meninas e meninos, como violência sexual, violência física e psicológica, pornografia infantil, ameaças e maus tratos."/>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

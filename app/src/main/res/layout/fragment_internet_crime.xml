@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.InternetCrimeViewModel"/>
+        <import type="br.com.ilhasoft.protejaBrasil.model.InternetViolation"/>
+
+        <variable name="violationTypes" type="java.util.List&lt;InternetViolation>"/>
+        <variable name="viewModel" type="InternetCrimeViewModel"/>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            style="@style/padding_report_item">
+
+            <TextView
+                android:id="@+id/question_what_happened"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_question_internet_crime"
+                style="@style/question_format" />
+
+            <Spinner
+                android:id="@+id/violationTypeSpinner"
+                android:layout_width="match_parent"
+                style="@style/spinner_format"
+                app:defaultText="@{@string/spinner_default_text}"
+                app:items="@{violationTypes}"
+                app:binding="@{viewModel.violationType}"/>
+
+            <TextView
+                android:id="@+id/question_where_happened"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_question_internet_location"
+                style="@style/question_format" />
+
+            <EditText
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_website_address"
+                android:inputType="textWebEditText"
+                app:binding="@{viewModel.website}"
+                app:validateType='@{"url"}'
+                style="@style/form_text_input" />
+
+            <TextView
+                android:id="@+id/question_violation_description"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_question_accessibility_violation_desc"
+                style="@style/question_format" />
+
+            <EditText
+                android:id="@+id/violationDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:minHeight="50dp"
+                android:hint="@string/hint_internet_crime_description"
+                android:gravity="start|center_vertical"
+                android:singleLine="true"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:maxLines="5"
+                app:binding="@{viewModel.description}"
+                style="@style/text_input_format" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

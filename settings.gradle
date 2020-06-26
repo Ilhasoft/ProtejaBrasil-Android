@@ -1,0 +1,4 @@
+include ':app', ':support-databinding', ':support-view-library'
+include ':recyclerview-databinding'
+include ':support-android'
+include ':JustifiedTextView'

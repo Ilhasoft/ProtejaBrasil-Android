@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.TextContent">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.SpinnerFullDropdown" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="AppTheme.SpinnerFullItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="padding_report_item">
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingLeft">@dimen/padding_side</item>
+        <item name="android:paddingRight">@dimen/padding_side</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="question_format">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="text_input_format">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/selector_edittext_focus_background</item>
+    </style>
+
+    <style name="form_text_input" parent="text_input_format">
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="spinner_format">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/default_spinner_background</item>
+    </style>
+
+    <style name="button_style_default">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_green_round_button</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="button_style_red">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_red_round_button</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="info_about_field">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+    <style name="radio_button_default">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="icons_about">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="text_red_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@color/red_text</item>
+    </style>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.AccessibilityReportViewModel"/>
+        <import type="br.com.ilhasoft.protejaBrasil.model.ResponseObject"/>
+        <import type="java.util.List"/>
+        <import type="br.com.ilhasoft.support.databinding.bindings.BindableField"/>
+
+        <variable name="viewModel" type="AccessibilityReportViewModel" />
+        <variable name="violationTypes" type="List&lt;ResponseObject>"/>
+        <variable name="violations" type="List&lt;ResponseObject>"/>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/padding_report_item">
+
+        <TextView
+            android:id="@+id/questionViolation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_question_accessibility_violation"
+            style="@style/question_format" />
+
+        <Spinner
+            android:id="@+id/violationTypeSpinner"
+            android:layout_width="match_parent"
+            style="@style/spinner_format"
+            app:defaultText="@{@string/hint_access_violation_type}"
+            app:binding="@{viewModel.violationType}"
+            app:items="@{violationTypes}" />
+
+        <Spinner
+            android:id="@+id/violationsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_marginTop="10dp"
+            style="@style/spinner_format"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:defaultText="@{@string/hint_access_violation}"
+            app:binding="@{viewModel.violation}"
+            app:items="@{violations}" />
+
+        <EditText
+            android:id="@+id/otherViolation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_violation_inform"
+            android:gravity="start|center_vertical"
+            android:singleLine="true"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:maxLines="5"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:binding="@{viewModel.otherViolation}"
+            style="@style/text_input_format" />
+
+        <TextView
+            android:id="@+id/questionViolationDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_distance_question"
+            android:text="@string/title_question_accessibility_violation_desc"
+            style="@style/question_format" />
+
+        <EditText
+            android:id="@+id/violationDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="@string/hint_violation_description"
+            android:gravity="start|center_vertical"
+            android:singleLine="true"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:maxLines="5"
+            app:binding="@{viewModel.violationDescription}"
+            style="@style/text_input_format" />
+
+    </LinearLayout>
+
+</layout>

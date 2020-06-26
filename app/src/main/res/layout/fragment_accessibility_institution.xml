@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.AccessibilityReportViewModel"/>
+        <variable name="viewModel" type="AccessibilityReportViewModel"/>
+        <variable name="institutionActivated" type="Boolean"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/padding_report_item">
+
+        <TextView
+            android:id="@+id/questionInstitutionActivated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_question_institution_activated_required"
+            style="@style/question_format" />
+
+        <RadioGroup
+            android:id="@+id/typeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/yes"
+                style="@style/radio_button_default" />
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no"
+                style="@style/radio_button_default" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/institutionActivatedText"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_institution_activated"
+            app:binding="@{viewModel.institutionActivated}"
+            app:visible="@{institutionActivated}"
+            style="@style/text_input_format"/>
+
+    </LinearLayout>
+
+</layout>

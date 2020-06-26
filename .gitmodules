@@ -1,0 +1,12 @@
+[submodule "recyclerview-databinding"]
+	path = recyclerview-databinding
+	url = https://github.com/johncordeiro/android-data-binding-recyclerview.git
+[submodule "support-android"]
+	path = support-android
+	url = https://github.com/Ilhasoft/support-android.git
+[submodule "support-databinding"]
+	path = support-databinding
+	url = https://bitbucket.org/ilhasoft/support-databinding.git
+[submodule "support-view-library"]
+	path = support-view-library
+	url = https://bitbucket.org/ilhasoft/support-view-library.git

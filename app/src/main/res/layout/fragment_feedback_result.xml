@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/feedback_thanks"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:text="@string/prompt_success_message_feedback"/>
+
+        <Button
+            android:id="@+id/evaluate"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@drawable/shape_yellow_round_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:text="@string/prompt_evaluate_google_play"/>
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="80dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:text="@string/label_back_start"/>
+
+    </LinearLayout>
+
+</layout>

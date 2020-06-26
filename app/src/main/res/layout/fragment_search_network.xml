@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="protectionViewModel"
+            type="br.com.ilhasoft.protejaBrasil.model.view.ProtectionNetworkViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/networkList"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="7dp"
+            app:items="@{protectionViewModel.list}"
+            app:handler="@{protectionViewModel.handler}"
+            app:itemViewBinder="@{protectionViewModel.itemViewBinder}" />
+
+    </FrameLayout>
+
+</layout>

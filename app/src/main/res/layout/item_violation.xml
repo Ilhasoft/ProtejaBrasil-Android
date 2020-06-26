@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="violation"
+            type="br.com.ilhasoft.protejaBrasil.model.Violation" />
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:layout_marginTop="@dimen/card_extra_margin"
+        android:layout_marginLeft="@dimen/card_side_margin"
+        android:layout_marginRight="@dimen/card_side_margin"
+        android:layout_marginBottom="@dimen/card_extra_margin"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#27c7db"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="@{violation.name}"
+            tools:text="Violência"/>
+
+    </LinearLayout>
+</layout>

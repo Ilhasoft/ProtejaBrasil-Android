@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.ViolationReportViewModel"/>
+        <variable name="viewModel" type="ViolationReportViewModel"/>
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding_report_item">
+
+            <TextView
+                android:id="@+id/question_violation_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_distance_question"
+                android:text="@string/title_question_violation_description"
+                style="@style/question_format" />
+
+            <EditText
+                android:id="@+id/violationDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_violation_description"
+                android:gravity="start|center_vertical"
+                android:singleLine="true"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:maxLines="5"
+                app:binding="@{viewModel.violationDescription}"
+                style="@style/text_input_format" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_distance_question"
+                android:text="@string/title_question_institution_activated"
+                style="@style/question_format" />
+
+            <RadioGroup
+                android:id="@+id/institutionActivatedRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left|start"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:checked="true"
+                    android:text="@string/yes"
+                    style="@style/radio_button_default" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    style="@style/radio_button_default" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/institutionActivated"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_institution_activated"
+                android:layout_marginTop="15dp"
+                app:binding="@{viewModel.institutionActivated}"
+                style="@style/text_input_format" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

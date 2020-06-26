@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="violationViewModel"
+            type="br.com.ilhasoft.protejaBrasil.model.view.ViolationTypeViewModel"/>
+
+        <variable
+            name="loaded"
+            type="boolean"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/violationsList"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                app:items="@{violationViewModel.violations}"
+                app:handler="@{violationViewModel.handler}"
+                app:itemViewBinder="@{violationViewModel.itemViewBinder}" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_gravity="center"
+            app:visible="@{!loaded &amp;&amp; violationViewModel.violations.isEmpty}"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/error_message_violation_empty"
+            app:visible="@{loaded &amp;&amp; violationViewModel.violations.isEmpty}"/>
+
+    </FrameLayout>
+
+</layout>

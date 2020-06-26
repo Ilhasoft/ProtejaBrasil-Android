@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="br.com.ilhasoft.protejaBrasil.model.Theme" />
+
+        <import type="java.util.List" />
+
+        <import type="br.com.ilhasoft.protejaBrasil.model.view.ViolationReportViewModel" />
+
+        <import type="br.com.ilhasoft.protejaBrasil.model.ResponseObject" />
+
+        <variable
+            name="themeId"
+            type="int" />
+
+        <variable
+            name="themes"
+            type="List&lt;Theme>" />
+
+        <variable
+            name="subtypes"
+            type="List&lt;ResponseObject>" />
+
+        <variable
+            name="subtypesTitle"
+            type="String" />
+
+        <variable
+            name="viewModel"
+            type="ViolationReportViewModel" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/padding_report_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_victim_profile"
+            style="@style/question_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_question_theme" />
+
+        <Spinner
+            android:id="@+id/themesSpinner"
+            style="@style/spinner_format"
+            android:layout_width="match_parent"
+            app:binding="@{viewModel.reportTheme}"
+            app:itemId="@{themeId}"
+            app:items="@{themes}"
+            app:layout="@{@layout/item_theme_simple}" />
+
+        <TextView
+            android:id="@+id/subtypeQuestion"
+            style="@style/question_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@{subtypesTitle}"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/subtypesSpinner"
+            style="@style/spinner_format"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            app:binding="@{viewModel.subtypes}"
+            app:defaultText="@{@string/spinner_default_text}"
+            app:items="@{subtypes}"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</layout>

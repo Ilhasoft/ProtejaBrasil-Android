@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proteja Brasil</string>
+
+    <!-- Navigation drawer menu -->
+    <string name="action_map">Mapa</string>
+    <string name="action_denounce">Denuncie</string>
+    <string name="action_reports">Minhas denúncias</string>
+    <string name="action_violation_types">Tipos de violação</string>
+    <string name="action_opinion">Opine</string>
+    <string name="action_about">Sobre</string>
+    <string name="label_close_menu">Close Menu</string>
+    <string name="label_open_menu">Open Menu</string>
+
+    <array name="entries">
+        <item>Delegacias</item>
+        <item>Hospitais</item>
+        <item>Conselhos</item>
+        <item>Hospitais</item>
+    </array>
+
+    <!-- Hints -->
+    <string name="hint_search_networks">Buscar redes de proteção</string>
+    <string name="hint_search_places">Buscar local</string>
+    <string name="hint_accessibility_barrier">Descreva</string>
+
+    <!-- Floating button texts -->
+    <string name="label_women_report_call">Denunciar pelo Ligue 180</string>
+    <string name="label_report_call">Denunciar pelo Disque 100</string>
+    <string name="label_accessibility">Local sem acessibilidade</string>
+    <string name="label_internet_crim">Violação na internet</string>
+    <string name="label_report">Violação fora da internet</string>
+
+    <!-- Activity titles -->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_accessibility_report">Local sem acessibilidade</string>
+
+    <!-- Report questions -->
+    <string name="title_question_victim_info">Nome da vítima:*</string>
+    <string name="title_question_victim_location_description">Onde a vítima pode ser localizada?*</string>
+    <string name="title_question_offender_info">Quem é o agressor?*</string>
+    <string name="title_question_place_violation">Onde aconteceu a violação?*</string>
+    <string name="title_question_violation_time">Há quanto tempo isso ocorre?*</string>
+    <string name="title_question_barriers">Quais barreiras você encontra nesse local?*</string>
+    <string name="title_question_violation_type">Qual tipo de violação aconteceu?*</string>
+    <string name="title_question_violation_description">Como a violência é praticada?*</string>
+    <string name="title_question_institution_activated">Algum orgão foi acionado?</string>
+    <string name="title_question_victim_location">Qual o endereço da vítima?*</string>
+    <string name="title_question_offender_location">Qual o endereço do agressor?*</string>
+    <string name="title_question_age_group_victim">Qual a faixa etária da vítima?</string>
+    <string name="title_question_ethnicity_victim">Qual a cor/raça da vítima?</string>
+    <string name="title_question_age_group_offender">Qual a faixa etária do agressor?</string>
+    <string name="title_question_ethnicity_offender">Qual a cor/raça do agressor?</string>
+    <string name="title_question_gender_victim">Qual o sexo biológico da vítima?*</string>
+    <string name="title_question_sex_option_victim">Qual a identidade sexual da vítima?</string>
+    <string name="title_question_gender_offender">Qual o sexo biológico do agressor?*</string>
+    <string name="title_question_sex_option_offender">Qual a identidade sexual do agressor?</string>
+    <string name="title_question_theme">Sua denúncia é relacionada a que perfil?*</string>
+    <string name="title_question_racial_subtype">De que se trata a denúncia de Igualdade Racial?*</string>
+    <string name="title_question_women_subtype">De que se trata a denúncia de Violência Contra Mulher?*</string>
+    <string name="title_question_internet_crime">O que aconteceu?*</string>
+    <string name="title_question_internet_location">Onde ocorreu (URL)?*</string>
+    <string name="title_question_accessibility_location">Qual o local da denúncia?*</string>
+    <string name="title_question_accessibility_location_info">Informações do local:*</string>
+    <string name="title_question_accessibility_violation">Qual o tipo de violação encontrada?*</string>
+    <string name="title_question_accessibility_violation_desc">Descreva o ocorrido:*</string>
+    <string name="title_question_accessibility_victim_name">Qual o nome da vítima?</string>
+    <string name="title_question_institution_activated_required">Algum orgão foi acionado?*</string>
+    <string name="title_question_victim_gender_no_req">Qual o sexo biológico da vítima?</string>
+
+    <!-- Result screens -->
+    <string name="protocol_info">Este é seu protocolo, para acompanhar ligue para o disque %d após 15 dias</string>
+
+    <!-- Email strings -->
+    <string name="email_subject_text">Denúncia de acessibilidade</string>
+    <string name="email_from_text">nobody@mail.com.br</string>
+    <string name="accessibility_report_email_address">dielson@ilhasoft.com.br</string>
+
+    <string name="label_violation_details">Tipo de Violação</string>
+    <string name="label_call">Ligar</string>
+    <string name="label_route">Rota</string>
+    <string name="title_violation_network">Rede de proteção</string>
+    <string name="hint_victim_name">Nome da vítima</string>
+    <string name="hint_victim_location_description">Ex.: Se encontra na casa de um amigo</string>
+    <string name="label_violation_report">Denúncia de violação</string>
+    <string name="text_next">Próximo</string>
+    <string name="hint_offender_name">Nome do agressor</string>
+    <string name="info_offender_name">Caso não saiba, informe desconhecido</string>
+    <string name="title_person">Pessoa</string>
+    <string name="title_company">Organização/Instituição</string>
+    <string name="title_unknown">Não sei</string>
+    <string name="hint_violation_description">Descreva o ocorrido</string>
+    <string name="hint_institution_activated">Informe um orgão</string>
+    <string name="response_negative">Não</string>
+    <string name="response_positive">Sim</string>
+    <string name="hint_unknown_location">Não sei</string>
+    <string name="hint_my_location">Meu local</string>
+    <string name="hint_address_city">Cidade</string>
+    <string name="hint_address">Endereço</string>
+    <string name="info_victim_name">Se for você informe seu nome</string>
+    <string name="spinner_default_text">Selecione uma opção</string>
+    <string name="spinner_default_state_text">Selecione um estado</string>
+    <string name="spinner_default_city_text">Selecione uma cidade</string>
+    <string name="error_required_fields">Existe alguma pergunta requerida sem resposta (marcada com asterisco)</string>
+    <string name="message_cancel_report">Tem certeza que deseja desistir da denúncia?</string>
+    <string name="option_cancel">Continuar</string>
+    <string name="option_give_up">Desistir</string>
+    <string name="message_report_protocol">Denúncia encaminhada para o</string>
+    <string name="label_back_start">Voltar para o início</string>
+    <string name="load_message_report">Enviando denúncia...</string>
+    <string name="message_report_error">Ocorreu um erro ao salvar. Tente novamente mais tarde.</string>
+    <string name="hint_fill_address">Informar endereço</string>
+    <string name="hint_internet_crime_description">Descrição</string>
+    <string name="hint_website_address">Endereço do site</string>
+    <string name="text_report">Denunciar</string>
+    <string name="label_internet_crime">Crimes na internet</string>
+    <string name="text_about_app">O Proteja Brasil é uma iniciativa do UNICEF e da Secretaria de Direitos Humanos do Ministério da Justiça e Cidadania. O aplicativo foi lançado em 2013 como resultado da Agenda de Convergência, uma instância de coordenação, que reúne diversas organizações com foco na promoção dos direitos de crianças e adolescentes durante megaeventos. \n\n A criação do aplicativo foi uma iniciativa do UNICEF, da Ilhasoft, do Cedeca-BA e da ABMP, com a adesão do governo federal em seguida. Em 2016, foi lançada nova versão, ampliando as funcionalidades e fazendo a integração com o Disque 100, principal canal de denúncia de violações de direitos humanos do País.</string>
+    <string name="label_about">Sobre</string>
+    <string name="label_opinion">Opine</string>
+    <string name="title_opinion">Dúvidas ou sugestões? Envie pra gente.</string>
+    <string name="hint_subject">Assunto</string>
+    <string name="hint_opinion_name">Nome</string>
+    <string name="hint_opinion_email">E-mail</string>
+    <string name="hint_opinion_message">Mensagem</string>
+    <string name="text_send">Enviar</string>
+    <string name="title_send_opinion_email">Enviar email...</string>
+    <string name="message_error_send_opinion">Não existem clientes de email instalados no seu dispositivo. Não foi possível enviar sua sugestão!</string>
+    <string name="load_message_network">Buscando redes de proteção...</string>
+    <string name="title_networks_found">Redes encontradas:</string>
+    <string name="error_message_networks_not_found">Não foi encontrada nenhuma rede de proteção com esse nome</string>
+    <string name="label_open_today">Aberto hoje</string>
+    <string name="label_closed_today">Fechado hoje</string>
+    <string name="receiver_email_opinion">contato@protejabrasil.com.br</string>
+    <string name="error_location_disabled">Habilite sua localização para efetuar essa ação!</string>
+    <string name="error_message_location_disabled">Não foi possível obter a rede de proteção mais próxima a você. Verifique a permissão do seu GPS.</string>
+    <string name="error_message_network_not_found">Não foi possível encontrar rede de proteção para atender à essa violação.</string>
+    <string name="hint_search_violation_type">Buscar redes de violação</string>
+    <string name="prompt_call_permission_error">Não será possível efetuar essa ligação sem permissão!</string>
+    <string name="label_contact">Contato</string>
+    <string name="label_internet_help">Ajuda e orientação</string>
+    <string name="label_criticism">Crítica</string>
+    <string name="label_compliment">Elogio</string>
+    <string name="error_message_feedback">Ocorreu um erro ao enviar seu feedback, verifique sua conexão com a internet!</string>
+    <string name="prompt_success_message_feedback">Vamos avaliar sua mensagem e em breve, você receberá uma resposta.</string>
+    <string name="error_message_type_invalid">Escolha do que se trata a sua opinião nas opções acima!</string>
+    <string name="label_inform">Informar</string>
+    <string name="label_doubt">Dúvida</string>
+    <string name="label_suggestion">Sugestão</string>
+    <string name="label_unknown">Não sei</string>
+    <string name="title_gender_help">Dúvida? A gente explica!</string>
+    <string name="message_gender_help">Sexo biológico:\n\nÉ a sua genitália e cromossomos quando você veio ao mundo.\n\nIdentidade sexual:\n\nIdentidade sexual de uma pessoa indica por quais gêneros ela sente-se atraída, seja física, romântica e/ou emocionalmente.</string>
+    <string name="label_help_button">OK, Entendi!</string>
+    <string name="error_message_my_location">Não foi possível encontrar o seu endereço, escolha informar manualmente</string>
+    <string name="disk_100">Disque 100</string>
+    <string name="disk_180">Ligue 180</string>
+    <string name="prompt_evaluate_google_play">Avalie no Google Play</string>
+    <string name="error_message_violation_empty">Nenhuma violação encontrada para esse tema</string>
+    <string name="label_required_field">*campo obrigatório</string>
+
+    <string name="hint_access_inst_offender_type">Selecione o tipo do agressor</string>
+
+    <string name="hint_access_inst_location_name">Nome do orgão/Instituição</string>
+    <string name="hint_access_trans_location_name">Nome do operador do transporte</string>
+
+    <string name="hint_access_inst_address">Informe o endereço completo</string>
+    <string name="hint_access_trans_address">Percurso/Número da linha ou voo</string>
+
+    <string name="title_access_inst_location">Orgão/Espaço público</string>
+    <string name="title_access_trans_location">Transporte Coletivo</string>
+
+    <string name="hint_access_violation_type">Selecione o tipo de violação</string>
+    <string name="hint_access_violation">Selecione a violação</string>
+
+    <string name="hint_access_violation_desc">Descrição do ocorrido</string>
+    <string name="hint_violation_inform">Informe a violação</string>
+    <string name="error_loading_data">Ocorreu um erro ao carregar os dados, verifique sua conexão e tente novamente.</string>
+    <string name="protocol_info_internet">Este é seu protocolo, para acompanhar acesse http://new.safernet.org.br/denuncie</string>
+    <string name="info_internet_crime_destination">Safernet</string>
+    <string name="error_message_valid_email">Digite um e-mail válido</string>
+    <string name="text_about_safernet">A SaferNet Brasil oferece o serviço de ajuda contra crimes e violações dos Direitos Humanos na internet com procedimentos efetivos e transparentes para encaminhar soluções. Você é atendido por um psicólogo, com respeito, anonimato, e estrito sigilo sobre tudo que for dito.</string>
+    <string name="protect_and_report">Proteja e Denuncie</string>
+    <string name="message_error_address">Ocorreu um erro ao salvar. Verifique se o endereço do site está correto (Ex.: http://www.google.com.br).</string>
+    <string name="label_report_using_app">Denunciar pelo aplicativo</string>
+    <string name="loading_protection_networks">Carregando redes de proteções</string>
+    <string name="refreshing_data">Atualizando redes de proteção</string>
+
+    <string name="domestic_and_familiar_violence">Violência doméstica e familiar</string>
+    <string name="intimidation">Ameaça</string>
+    <string name="feminicide">Feminicídio</string>
+    <string name="women_trade">Tráfico de mulheres</string>
+    <string name="false_imprisonment">Cárcere privado</string>
+    <string name="violence_against_religious_diversity">Violência contra diversidade religiosa</string>
+    <string name="violence_on_sports">Violência no esporte</string>
+    <string name="homicide">Homicídio</string>
+    <string name="institutional_violence">Violência institucional</string>
+    <string name="physical_violence">Violência física</string>
+    <string name="moral_violence">Violência moral</string>
+    <string name="police_violence">Violência policial</string>
+    <string name="obstetrical_violence">Violência obstrética</string>
+    <string name="sexual_violence">Violência sexual</string>
+    <string name="virtual_violence">Violência virtual</string>
+    <string name="slave_work">Trabalho escravo</string>
+    <string name="other_entries">Outros registros</string>
+
+    <!-- onboard -->
+    <string name="onboard_message">Violência contra\n o gênero feminino</string>
+    <string name="onboard_submessage">Agora o Proteja Brasil\n está integrado ao Ligue 180</string>
+    <string name="proceed">Continuar</string>
+
+</resources>
